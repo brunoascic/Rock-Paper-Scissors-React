@@ -53,7 +53,7 @@ function Play() {
             const robotFinalPositionY = vsSvgRect.top - robotButtonRect.top;
 
             // Apply a CSS transform to the robot's button to move it to the final position
-            robotButton.style.transform = `translate(${robotFinalPositionX}px, ${robotFinalPositionY}px)`;
+            //robotButton.style.transform = `translate(${robotFinalPositionX}px, ${robotFinalPositionY}px)`;
         }
 
         robotButton.setAttribute('disabled', 'true');
