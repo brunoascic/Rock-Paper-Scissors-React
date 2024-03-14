@@ -1,0 +1,8 @@
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    height: calc(30vh - 20px);
+    width: calc(100vw - 20px);
+    margin-top: calc(20vh - 20px);
+    font-size: calc(10px + 20vmin);
+}
