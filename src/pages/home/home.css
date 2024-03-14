@@ -6,3 +6,10 @@
     margin-top: calc(20vh - 20px);
     font-size: calc(10px + 20vmin);
 }
+
+.buttonClass
+{
+    width: calc(50px + 10vmin);
+    height: calc(20px + 5vmin);
+    font-size: 20px;
+}

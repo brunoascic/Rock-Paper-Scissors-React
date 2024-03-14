@@ -9,7 +9,7 @@ function Home() {
     useEffect(() => {
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 2000); // Adjust this value to match the duration of your loading animation
+        }, 3000);
 
         return () => clearTimeout(timer);
     }, []);
@@ -22,7 +22,7 @@ function Home() {
                  style={{position: "relative", display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                 <Button href="/game" variant="primary"
                         style={{position: "absolute"}}
-                        className="d-flex justify-content-center align-items-center">Play</Button>
+                        className="d-flex justify-content-center align-items-center buttonClass">Play</Button>
                 <Icon style={{position: "absolute", pointerEvents: "none"}}/>
             </div>
         </div>

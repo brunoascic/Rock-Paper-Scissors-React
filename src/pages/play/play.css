@@ -1,0 +1,76 @@
+.icon-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    height: 90vh;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    justify-content: center;
+    width: 10vw;
+    gap: 10px;
+}
+.button-container button {
+    border: none;
+    background: transparent;
+    transition: transform 1s;
+}
+
+.home-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 20%;
+    height: 5%;
+    margin: 1em;
+    top: 1em;
+    left: 2em;
+}
+
+.playerContainer {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: auto;
+}
+
+.robotContainer {
+    display: flex;
+    align-items: center;
+    height: 90vh;
+    width: auto;
+}
+
+.robot {
+    width: 5em;
+    height: auto;
+}
+
+.person {
+    width: 5em;
+    height: auto;
+}
+
+.vs-svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 7%;
+    height: auto;
+}
+
+@keyframes glide {
+    to {
+        transform: translate(0%, 0%);
+    }
+}
+
+.glide {
+    animation: glide 0.5s forwards;
+}
