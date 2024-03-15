@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Loading.css'
-import {ReactComponent as Loading } from "../../icons/loading.svg";
+import {ReactComponent as Loading } from "../assets/icons/loading.svg";
 
 const Loadingscreen = () => {
     const [loadingDone, setLoadingDone] = useState(false);

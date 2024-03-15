@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./home.css";
-import { ReactComponent as Icon } from '../../icons/icon.svg';
+import { ReactComponent as Icon } from '../../components/assets/icons/icon.svg';
 import Button from "react-bootstrap/Button";
-import HomeLoadingScreen from '../../components/loading/Homeloadingscreen';
+import HomeLoadingScreen from '../../components/loading/HomeLoadingScreen/Homeloadingscreen';
 function Home() {
     const [loading, setLoading] = useState(true);
 

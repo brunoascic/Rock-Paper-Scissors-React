@@ -1,3 +1,8 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
 .icon-container {
     display: flex;
     justify-content: space-between;
@@ -73,4 +78,8 @@
 
 .glide {
     animation: glide 0.5s forwards;
+}
+
+.no-scroll {
+    overflow: hidden;
 }
