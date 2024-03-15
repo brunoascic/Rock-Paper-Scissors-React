@@ -23,7 +23,7 @@ function Home() {
                 <Button href="/game" variant="outline-secondary"
                         style={{position: "absolute"}}
                         className="d-flex justify-content-center align-items-center buttonClass">Play</Button>
-                <Icon style={{position: "absolute", pointerEvents: "none"}}/>
+                <Icon style={{position: "absolute", pointerEvents: "none", scale: "0.9"}}/>
             </div>
         </div>
     );
