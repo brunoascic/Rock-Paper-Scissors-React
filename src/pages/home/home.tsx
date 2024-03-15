@@ -20,7 +20,7 @@ function Home() {
             <h1>Rock Paper Scissors</h1>
             <div className="buttonContainer"
                  style={{position: "relative", display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
-                <Button href="/game" variant="primary"
+                <Button href="/game" variant="outline-secondary"
                         style={{position: "absolute"}}
                         className="d-flex justify-content-center align-items-center buttonClass">Play</Button>
                 <Icon style={{position: "absolute", pointerEvents: "none"}}/>
