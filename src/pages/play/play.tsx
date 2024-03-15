@@ -15,7 +15,7 @@ function Play() {
         const buttons = document.querySelectorAll('.robotContainer .button-container button');
 
         const button = event.currentTarget;
-        const buttonType = button.getAttribute('dataType'); // This will be 'rock', 'paper', or 'scissors'
+        const buttonType = button.getAttribute('dataType');
         const robotButton = buttons[Math.floor(Math.random() * buttons.length)] as HTMLButtonElement;
         const robotButtonType = robotButton.getAttribute('dataType');
 
@@ -45,19 +45,18 @@ function Play() {
 
         const vsSvgRect = vsSvgElement.getBoundingClientRect();
 
-        const finalPositionX = vsSvgRect.right - buttonRect.left; // Add an offset of 50 pixels
+        const finalPositionX = vsSvgRect.right - buttonRect.left;
         const finalPositionY = vsSvgRect.top - buttonRect.top - 25;
 
         button.style.transform = `translate(${finalPositionX}px, ${finalPositionY}px)`;
-        button.setAttribute('disabled', 'true'); // Disable the button after it has been clicked and moved
+        button.setAttribute('disabled', 'true');
 
-        const robotFinalPositionX = vsSvgRect.right - robotButtonRect.right - 120; // Add an offset of 50 pixels
+        const robotFinalPositionX = vsSvgRect.right - robotButtonRect.right - 120;
         const robotFinalPositionY = vsSvgRect.top - robotButtonRect.top - 25;
 
         robotButton.style.transform = `translate(${robotFinalPositionX}px, ${robotFinalPositionY}px)`;
 
-        robotButton.setAttribute('disabled', 'true'); // Disable the button after it has been clicked and moved
-
+        robotButton.setAttribute('disabled', 'true');
         buttons.forEach(button => {
             button.setAttribute('disabled', 'true');
         });
